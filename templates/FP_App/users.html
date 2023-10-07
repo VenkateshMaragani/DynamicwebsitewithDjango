@@ -1,0 +1,81 @@
+{% include 'FP_App/nav.html' %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css'%}">
+    <title>Users</title>
+    <style>
+        /* Add your CSS styles here */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        table, th, td {
+            border: 1px solid #eba9a9;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e86d6d;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h3" style="font-size: 40px">Users</h1>
+    <div>
+        {% if users %}
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Country</th>
+                    <th>Message</th>
+                    <th>Phone No</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                    <tr>
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.full_name }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.subject }}</td>
+                        <td>{{ user.country }}</td>
+                        <td>{{ user.message }}</td>
+                        <td>{{ user.ph }}</td>
+
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <h2>No Users </h2>
+        {% endif%}
+    </div>
+</body>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<footer >
+    <p>&copy; 2023 MSRCOSMOS GROUP</p>
+</footer>
+</html>
+
+
+
+
+
+

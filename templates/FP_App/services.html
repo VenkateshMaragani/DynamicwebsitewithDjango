@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% include 'FP_App/nav.html' %}
+{%load static%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}"> 
+    <style> 
+    section {
+    margin-bottom: 30px;
+    }
+
+    .image {
+        max-width: 100;
+    }
+    .ve{
+        display: flex;
+        flex-direction: row;
+    }
+    main {
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #f6dcdc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.654);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="h3" style="font-size: 40px">Our Services</h1>
+       
+    </header>
+
+    <main>
+        <section>
+            <div  class="ve">
+            <img class="image" style="margin-top: 30px ;
+            " src="{% static 'images/2.webp' %}" alt="1">
+            <div>
+            <h2 class="h3" style="margin-left: 10px ;
+            " style=" margin-right: 10px;">RPA and Automation:</h2>
+            <p class="p2" style="margin-left: 15px;
+            " style=" margin-right: 20px;">RPA automates human tasks to help streamline workflows and increase productivity. 
+                It sounds easy, yet it’s not. It requires the right tool and the right partner experienced 
+                in cutting-edge machine learning (ML), artificial intelligence (AI), and automation technologies. 
+                MSRcosmos and our automation partners have the right solution expertise to get you started and 
+                help you through your automation journey.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <main>
+        <section>
+            <div  class="ve">
+                <img class="image" style="margin-top: 25px ;" src="{% static 'images/1.webp' %}" alt="1">
+                <div>
+            <h2 class="h3"  style="margin-left: 10px ;
+            " style=" margin-right: 10px;">Cloud Infrastructure Management:</h2>
+            <p class="p2" style="margin-left: 15px ;
+            " style=" padding-right: 20px;">Without the right oversight, monitoring, and governance to efficiently manage your 
+                cloud infrastructure, your business modernization isn’t sustainable. MSRcosmos has the experience 
+                and best practices to support your cloud and on-premises infrastructure initiatives to provide the
+                 agility to keep pace with continuous innovation.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <main>
+        <section>
+            <div  class="ve">
+                <img class="image" style="margin-top: 25px;" src="{% static 'images/3.webp' %}" alt="1">
+                <div>
+            <h2 class="h3" style="margin-left: 10px ;
+            " style=" margin-right: 10px;">Enterprise Applications:</h2>
+            <p class="p2" style="margin-left: 15px ;
+            " style=" padding-right: 20px;" >Solution availability, security, and performance are the foundations of a trusted IT environment.
+                 That’s why our clients depend on our advanced methodologies, CMMI Level 3 capabilities, and wide-ranging domain 
+                 expertise in AMS to keep their enterprise applications up and running at their best.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <main>
+        <section>
+            <div  class="ve">
+                <img class="image" style="margin-top: 25px ;" src="{% static 'images/4.webp' %}" alt="1">
+            <div>
+            <h2 class="h3" style="margin-left: 10px ;
+            " style=" margin-right: 10px;">Infrastructure Services:</h2>
+            <p class="p2"style="margin-left: 15px ;
+            " style=" margin-right: 20px;" >Companies must take a proactive approach to securing the enterprise to protect against increasingly frequent
+                 and evolving threats. MSRcosmos provides the required security framework and can also help companies improve end user 
+                 business productivity and processes.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <footer>
+         <p>&copy; 2023 MSRCOSMOS GROUP</p>
+    </footer>
+</body>
+</html>

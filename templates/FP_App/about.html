@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% include 'FP_App/nav.html' %}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block child_title %}<title>About</title>{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}"> 
+
+     <style>
+
+        /* Reset some default styles for better consistency */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f1f1;
+        }
+
+        
+        /* Style the main content */
+        main {
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #f6dcdc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.654);
+        }
+
+        section {
+            margin-bottom: 30px;
+           
+            
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #702e2edf;
+        }
+
+        section p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #060000e7;
+            padding-right: 15%;
+            padding-left: 15%;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+         Style the footer */
+        
+    
+        /* Style the header */
+        header {
+            background-color: #333;
+            color: #de0c0c;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            
+        }
+        .h1 {
+            font-size: 55px;
+            color: #f4f4f4;
+        }
+        .p1 {
+            font-size: 25px;
+            color: #f4f4f4;
+        }
+  
+
+        .address {
+            font-size: 14px;
+        }
+
+        .container{
+            position: relative;
+            width: 98%;
+            height: 90vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'images/6.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(100px);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h3" style="font-size: 40px">About Us:</h1>
+    <div class="banner">
+    <div class="container">
+        <!-- <src="{% static 'images/6.jpg' %}" alt="" style="width:100%;"height="500"> -->
+        <div class="content">
+          <h1 class="h1" >
+         Promise Delivered</h1>
+          <p class="p1">It’s not just a tagline, it’s how we live and work.</p>
+        </div>
+      </div>
+    </div>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+   
+    <main>
+        <section>
+            <h2 class="h3">Our Story:</h2>
+            <p >When we make commitments to our customers, we deliver. Not doing is not acceptable. 
+                We deliver on our promises. Our success is our customers success. </p>
+        </section>
+       
+
+    </main>
+    &nbsp;
+    &nbsp;
+    <main>
+        <section>
+            <h2 class="h3">A differentiated approach:</h2>
+            <p >We take a differentiated approach to our work and our clients. 
+                We’re not just involved in providing products or services that solve a customer’s problem.
+                 Our holistic approach extracts the very best of each technology and solution for your business.
+                  We apply our extensive expertise and have unwavering commitment to your success.
+
+            </p>
+        </section>
+    </main>
+    &nbsp;
+    &nbsp;
+    <main> 
+        <section>
+            <h2 class="h3">Our Vision:</h2>
+            <p >Through innovation, we inspire and shape our customers’ business while
+                 positively improving the lives of people globally. </p>
+        </section>
+    </main> 
+    &nbsp;
+    &nbsp;
+
+    <main> 
+        <section>
+            <h2 class="h3">Our Mission:</h2>
+            <p >Through the eyes of our customers and partners, we help transform businesses
+                 through emerging technologies. With our strategic partners, products, solutions, 
+                 and innovative business models, we deliver on our promises and ultimately return value to society. </p>
+        </section>
+
+    </main>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <footer>
+        <p>&copy; 2023 MSRCOSMOS GROUP</p>
+    </footer>
+</body>
+</html>
